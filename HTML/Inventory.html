@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="..\Images\ER.ico" />
+        <title>Eliete Rides</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="..\css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="bcgGrad">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img id="logo" src="..\Images\ER2.png" alt=""></a>      
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="list-style:none;">
+                        <li><a id="aNavlink" href="..\index.html">Home</a></li>
+                        <li class="active"><a class="navlink" id="navlink" href="inventory.html">Inventory</a></li>
+                        <li><a class="navlink" id="navlink" href="about.html">About</a></li>
+                        <li><a class="navlink" id="navlink" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="search"  class="form-control" id="searchbox" placeholder="Search our store" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container carouselWrapper">
+            <div class="carousel slide" id="inventoryCarousel" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#inventoryCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#inventoryCarousel" data-slide-to="1" class></li>
+                    <li data-target="#inventoryCarousel" data-slide-to="2" class></li>
+                    <li data-target="#inventoryCarousel" data-slide-to="3" class></li>
+                    <li data-target="#inventoryCarousel" data-slide-to="4" class></li>
+                    <li data-target="#inventoryCarousel" data-slide-to="5" class></li>
+                </ol>
+
+                <!-- Wrapper for Slides-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="..\Images\2001 MR2 Spyder.jpg" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3 id="carName">2001 Toyota MR2 Spyder</h3>
+                            <p id="carInfo">Great one owner car. Lowest cost Mid engine car you'll find</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="..\Images\toyota-celica-supra.jpg" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3 id="carName">1983 Toyota Celica Supra</h3>
+                            <p id="carInfo">One of a kind find, engine has been bored over and rebuilt, all other parts are mint original</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="..\Images\2005 Acura NSX.jpg" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3 id="carName">2005 Acura NSX</h3>
+                            <p id="carInfo">Clasic black on black. All service done at dealership</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="..\Images\M3.jpg" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3 id="carName">1989 BMW M3</h3>
+                            <p id="carInfo">The car that launched a love affair with driving. Matching numbers car</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="..\Images\Olds-442-W30-00000.jpg" class="img-responsive" alt="..">
+                        <div class="carousel-caption">
+                            <h3 id="carName">1970 Oldsmobile 442 / W30</h3>
+                            <p id="carInfo">Possibly the best convertible muscle car ever built. Lovingly restored</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#inventoryCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#inventoryCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>    
+            </div>
+        </div>
+
+        <!-- Inventory Thumbnails to be added by script-->
+        <div class="container-fluid" id="list">
+        </div>    
+
+        <footer class="footer">
+            <div class="row" id="social">
+                <div class="container-fluid col-md-offset-5">
+                    <a class="btn btn-social-icon btn-lg btn-facebook ">
+                        <i class="fa fa-facebook-square"></i></a>
+                    <a class="btn btn-social-icon btn-lg btn-twitter">
+                        <i class="fa fa-twitter-square"></i></a>
+                    <a class="btn btn-social-icon btn-lg btn-linkedin">
+                        <i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2"><p>Our address is <address>1337 Rides Ave. Mirimar Beach, FL</address></p></div>
+                <div class="col-md-4 col-md-offset-2"><p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.leetrides.com">Eliete Rides</a></p></div>
+            </div>
+        </footer>
+
+        <!-- libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="..\JS\inventory.js"></script>
+    </body>
+</html>
