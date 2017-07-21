@@ -35,7 +35,6 @@ $( document ).ready(function() {
         ********************************************/
     ]
 
-    //equalize the images
 
     function makeUL(array) {
         // Create the list element:
